@@ -1,0 +1,37 @@
+a) Added flavicon twitter bird to show at the top in the browswer and for favorites.
+   I read how to do this by going through the MDN Mozilla Web Docs HTML tutorials.
+
+b) Added Twitter's Navigation menu at the top (Home, Moments, etc.).
+   I managed to get this Navigation menu centered and aligned properyly
+   by adding align-items: center; and display: flex; under the #header in
+   the .css file. I played around with the options using the chrome
+   inspecter learned in class.
+
+c) Enhanced the Profile Info section by adding a big Follow button and
+   clickable photos, similar to real twitter.
+   I played around with the chrome inspector to get the proper width and
+   margins so that all the photos would fit in a 2 x 3 grid. For the
+   follow button, I added font-size: 150%; border-radius: 50mm; to get
+   larger font and added boarder-radius to get the curved look of the
+   follow button similar to the real twitter button's. To make the six
+   photos clickable, I just wrapped them in the anchor <a> leanred in class.
+   I also had to add position: relative; in my custom #squarePhotos in
+   the .css file.
+
+d) Added shadowing to the box elements (Profile, Timeline)
+   For this I added box-shadow: 5px 5px 5px grey; to the css elements
+   #profileInfo and #timeline.
+
+e) Added two additional Tweets
+   I followed the same pattern give in the first two tweets.
+
+f) Added an <iframe> elements to include a playable youtube video
+   I leanred about the <iframe> element by reading the MDN Web Docs
+   HTML tutorial, which is how you can link youtube videos and it uses
+   YouTubes bandwidth when you play the video, not your websites.
+
+g) Added the trending news section seen on the real Twitter page to float: left
+   I took a screen shot of the live twitter news feed from my account
+   and added this by creating a new <div> element in the HTML file and
+   a new #trending box in the .css file where I played around with those
+   settings from the chrome inspector.

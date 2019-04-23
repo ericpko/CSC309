@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+ 	<meta charset="utf-8">
+    <title>Exercise 1: Twitter Layout</title>
+    <meta name="author" content="Eric Koehli" />
+    <!-- Help search engines -->
+    <meta name="description" content="University of Toronto Twitter." />
+    <link rel="stylesheet" type="text/css" href="e1_style.css">
+    <!-- Adds a favicon icon image for tabs and favorites -->
+    <link rel="shortcut icon" href="bird.png" type="image/x-icon"/>
+ </head>
+
+ <body>
+
+  <img src="uoft.jpg" id="bigProfilePicCircle">
+
+   <!-- The header -->
+   <div id="header">
+     <!-- Twitter logo goes in here -->
+    <img class="birdLogo" src="bird.png" alt="Twitter bird logo"/>
+    <a href="#">&nbsp &nbsp &nbsp &nbsp Home</a>
+		<a href="#">Moments</a>
+		<a href="#">Notifications</a>
+		<a href="#">Messages</a>
+   </div>
+
+	<!-- The big banner image -->
+ 	<div id="banner"> <!-- Just holds the banner image, don't need to style this div. -->
+    <!-- Banner image goes in here -->
+    <img class="bannerPic" src="uoft_banner.jpeg" alt="Picture of UofT with students.">
+  </div>
+
+ 	<div id="profileStats">
+ 		<ul>
+ 			<!-- Style the list element: Label and number -->
+      <li>Tweets<br><span class="profileStatsNumber">478</span></li>
+      <li>Followers<br><span class="profileStatsNumber">23K</span></li>
+      <li>Following<br><span class="profileStatsNumber">12</span></li>
+      <li>Likes<br><span class="profileStatsNumber">10.3K</span></li>
+      <li>Moments<br><span class="profileStatsNumber">25</span></li>
+ 		</ul>
+ 	</div>
+
+
+
+ 	<!-- The Profile Info Section -->
+ 	<div id="profileInfo">
+ 		<h2>University of Toronto</h2>
+ 		<p class="grey">@UofT</p>
+ 		<p>
+ 			Connect with Canada's top university and one of the world’s strongest academic and research powerhouses. Find the latest news & events @uoftnews. #UofT
+    </p>
+
+    <button id="followButton">Follow</button>
+		<div id="photosAndVids">2902 Photos and videos</div>
+    <div id="squarePhotos">
+			<a href="images/snowfall.jpg" target="_blank"><img src="images/snowfall.jpg"></a>
+			<a href="images/uoftsnow.jpg" target="_blank"><img src="images/uoftsnow.jpg"></a>
+			<a href="images/uoftgard.jpg" target="_blank"><img src="images/uoftgard.jpg"></a>
+			<a href="images/uoftenter.jpg" target="_blank"><img src="images/uoftenter.jpg"></a>
+			<a href="images/uoft-build1.jpg" target="_blank"><img src="images/uoft-build1.jpg"></a>
+      <a href="images/snow.jpg" target="_blank"><img src="images/snow.jpg"></a>
+    </div>
+ 	</div>
+
+
+  <!-- The Timeline Section -->
+  <div id='timeline'>
+
+ 		<div class='timelineHeader'>
+ 			<ul>
+	 			<li><a href="#">Tweets</a></li>
+	 			<li><a href="#">Tweets & Replies</a></li>
+ 			</ul>
+ 		</div>
+
+ 		<!-- First tweet -->
+ 		<div class='tweet'>
+ 			<!-- Put the tweet icon and content in this div.
+ 			You should have two divs inside this div: one that is a container for the tweet icon,
+ 			and one that has the content of the tweet.
+ 			Remember to look in the starter CSS for appropriate class names that
+ 			match these descriptions. -->
+      <div class="tweetIconContainer">
+				<img class="tweetIcon" src="uoft.jpg"/>
+			</div>
+			<div class ="tweetContent">
+				<strong>University of Toronto </strong><span class="grey">@UofT</span>
+				<br><br>Another great day at UofT! <span class="hashtag">#UofT #GreatDay</span>
+			</div>
+ 		</div>
+
+ 		<!-- Second tweet -->
+ 		<div class='tweet'>
+			<div class="tweetIconContainer">
+        <img class="tweetIcon" src="uoft.jpg"/>
+      </div>
+      <div class="tweetContent">
+        <strong>University of Toronto </strong> <span class="grey">@UofT</span>
+        <br><br>Check out some books at <span class="hashtag">#Robarts</span>
+        <img class="tweetContentPicture" src="robarts.jpg">
+      </div>
+ 		</div>
+
+		<!-- Add your own tweet below -->
+		<div class='tweet'>
+      <div class="tweetIconContainer">
+        <img class="tweetIcon" src="images/einstein.jpg"/>
+      </div>
+      <div class="tweetContent">
+        <strong>Albert Einstein </strong><span class="grey">@AlbertEinstein</span>
+        <br><br>Hey UofT students! Check out this video about the web! <span class="hashtag">#Internet</span>
+        <iframe width="560" height="315" class="tweetContentPicture"
+        src="https://www.youtube.com/embed/e4S8zfLdLgQ?start=65"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <!-- last tweet -->
+    <div class='tweet'>
+        <div class="tweetIconContainer">
+          <img class="tweetIcon" src="images/waterloo.jpg"/>
+        </div>
+        <div class="tweetContent">
+          <strong>University of Waterloo </strong><span class="grey">@UWaterloo</span>
+          <br><br>I wish our CS department was as strong as UofT's! <span class="hashtag">#UofTisBetter</span>
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!-- Trending news -->
+  <div id="trending">
+    <img src="images/ss.png" />
+  </div>
+
+
+
+
+ </body>
+</html>
