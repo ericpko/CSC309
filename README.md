@@ -1,2 +1,2 @@
 # CSC309
-Programming on the Web
+Exercises/assignments for csc309
